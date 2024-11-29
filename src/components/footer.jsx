@@ -1,79 +1,99 @@
 import React from 'react';
-import { FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import K from '../constants';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-12">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+    <motion.footer 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460] text-white py-12"
+    >
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Section */}
         <div>
-          <h2 className="font-heading text-lg mb-4 font-bold">JOY'S BEADS & ACCESSORIES</h2>
-          <p className="text-gray-300">
-            Handcrafted beads and accessories that bring beauty and joy to your life. Discover unique, one-of-a-kind pieces.
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            className="flex items-center space-x-3 mb-4"
+          >
+            <K.BRAND_INFO.icon className="w-8 h-8 text-rose-400" />
+            <h2 className="text-2xl font-bold font-serif text-rose-300">
+              {K.BRAND_INFO.name}
+            </h2>
+          </motion.div>
+          
+          <p className="text-gray-300 mb-4">
+            {K.BRAND_INFO.description}
           </p>
-          <div className="flex justify-center md:justify-start space-x-4 mt-4">
-            <a href="#" className="text-gray-300 hover:text-accent transition-colors">
-              <FaTwitter size={20} />
-            </a>
-            <a href="#" className="text-gray-300 hover:text-accent transition-colors">
-              <FaFacebookF size={20} />
-            </a>
-            <a href="#" className="text-gray-300 hover:text-accent transition-colors">
-              <FaInstagram size={20} />
-            </a>
+          
+          <div className="flex space-x-4">
+            {K.SOCIAL_LINKS.map((social, index) => (
+              <motion.a
+                key={index}
+                href={social.href}
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                className={`text-gray-400 ${social.color} transition-all`}
+              >
+                <social.icon className="w-6 h-6" />
+              </motion.a>
+            ))}
           </div>
         </div>
 
-        {/* Menu Section */}
-        <div>
-          <h2 className="font-heading text-lg mb-4 font-bold">Menu</h2>
-          <ul className="space-y-2">
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Shop</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">About</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Journal</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Contact Us</a></li>
-          </ul>
-        </div>
-
-        {/* Help Section */}
-        <div>
-          <h2 className="font-heading text-lg mb-4 font-bold">Help</h2>
-          <ul className="space-y-2">
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Shipping Information</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Returns & Exchange</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Terms & Conditions</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-accent transition-colors">FAQs</a></li>
-          </ul>
-        </div>
+        {/* Menu Sections */}
+        {K.MENU_SECTIONS.map((section, sectionIndex) => (
+          <div key={sectionIndex}>
+            <h3 className="text-lg font-bold mb-4 text-rose-300">
+              {section.title}
+            </h3>
+            <ul className="space-y-2">
+              {section.links.map((link, linkIndex) => (
+                <motion.li
+                  key={linkIndex}
+                  whileHover={{ translateX: 5 }}
+                  className="transition-transform"
+                >
+                  <a 
+                    href={link.href} 
+                    className="text-gray-300 hover:text-rose-300 transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
         {/* Contact Section */}
         <div>
-          <h2 className="font-heading text-lg mb-4 font-bold">Have a Question?</h2>
-          <ul className="space-y-2 text-gray-300">
-            <li className="flex items-center">
-              <span className="mr-2">📍</span>
-              203 Fake St. Mountain View
-            </li>
-            <li className="flex items-center">
-              <span className="mr-2">📞</span>
-              +2 392 3929 210
-            </li>
-            <li className="flex items-center">
-              <span className="mr-2">📧</span>
-              info@yourdomain.com
-            </li>
+          <h3 className="text-lg font-bold mb-4 text-rose-300">
+            Connect With Us
+          </h3>
+          <ul className="space-y-3">
+            {K.CONTACT_INFO.map((contact, index) => (
+              <li 
+                key={index} 
+                className="flex items-center text-gray-300 space-x-3 break-words"
+              >
+                <contact.icon className="w-5 h-5 text-rose-400" />
+                <span className="text-ellipsis overflow-hidden">{contact.text}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      <div className="mt-10 text-center text-gray-300">
-        <p>
-          Copyright ©2024 All rights reserved | This template is made with{" "}
-          <span className="text-accent">♥</span> by JOY'S BEADS & ACCESSORIES
+      <div className="mt-10 text-center border-t border-gray-700 pt-6">
+        <p className="text-gray-400">
+          © 2024 Ethereal Adornments. 
+          Crafted with <span className="text-rose-400">♥</span> 
+          {" "} | All Rights Reserved
         </p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

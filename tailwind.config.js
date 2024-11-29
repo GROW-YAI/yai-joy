@@ -7,27 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FF6F61", // Warm Coral for main accents
+        primary: "#FDA4AF", // Warm Coral for main accents
         secondary: "#333333", // Deep Charcoal for text
         accent: "#FFD700", // Vibrant Gold for highlights
         background: "#FAFAFA", // Light Grayish White for backgrounds
-      },
-      fontFamily: {
-        heading: ['"Poppins"', 'sans-serif'], // Modern and elegant font for headings
-        body: ['"Roboto"', 'sans-serif'], // Clean and readable font for body
-      },
-      fontSize: {
-        sm: "0.875rem", // Small text size
-        base: "1rem", // Standard base size
-        lg: "1.125rem", // Slightly larger text
-        xl: "1.25rem", // Large text
-        '2xl': "1.5rem", // Very large text
-      },
-      spacing: {
-        18: "4.5rem", // For extra flexibility in spacing
-      },
-      borderRadius: {
-        xl: "1.25rem", // Smooth rounded edges for cards and buttons
+        darkBg: "#1a1a2e", // Dark Blue background
+        darkBgAccent: "#16213e", // Darker Blue accent
+        darkestBg: "#0f3460", // Very Dark Blue accent
+        roseAccent: "#FDA4AF", // Warm Coral for rose elements
       },
     },
   },
