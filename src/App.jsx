@@ -1,9 +1,12 @@
 // src/App.jsx
-import React from "react";
-import LandingPage from "./pages/landing"; // Importing the landing page
-import { FaArrowUp } from 'react-icons/fa'; // For a scroll to top icon
+import React, { useState } from "react";
+import LandingPage from "./pages/landing";
+import { FaArrowUp } from 'react-icons/fa';
+import PreLoader from './components/preloader';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -11,19 +14,29 @@ function App() {
     });
   };
 
-  return (
-    <div>
-      <LandingPage />
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
 
-      {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-10 right-10 p-3 bg-primary rounded-full shadow-lg text-white hover:bg-secondary"
-        aria-label="Scroll to Top"
-      >
-        <FaArrowUp size={24} />
-      </button>
-    </div>
+  return (
+    <>
+      {isLoading ? (
+        <PreLoader onLoadingComplete={handleLoadingComplete} />
+      ) : (
+        <div>
+          <LandingPage />
+
+          {/* Scroll to Top Button */}
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-10 right-10 p-3 bg-primary rounded-full shadow-lg text-white hover:bg-secondary"
+            aria-label="Scroll to Top"
+          >
+            <FaArrowUp size={24} />
+          </button>
+        </div>
+      )}
+    </>
   );
 }
 

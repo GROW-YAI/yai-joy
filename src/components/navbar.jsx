@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Flower, Sparkle, Feather, ChevronDown, Menu } from 'lucide-react';
+import { Flower, Menu } from 'lucide-react';
 import K from '../constants';
 
 const Navbar = () => {
