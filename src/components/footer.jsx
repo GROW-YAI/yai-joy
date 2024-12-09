@@ -8,7 +8,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460] text-white py-12"
+      className="bg-primary text-white py-12"
     >
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Section */}
@@ -17,8 +17,8 @@ const Footer = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3 mb-4"
           >
-            <K.BRAND_INFO.icon className="w-8 h-8 text-rose-400" />
-            <h2 className="text-2xl font-bold font-serif text-rose-300">
+            <K.BRAND_INFO.icon className="w-8 h-8 text-accent" />
+            <h2 className="text-2xl font-bold font-serif text-accent">
               {K.BRAND_INFO.name}
             </h2>
           </motion.div>
@@ -45,7 +45,7 @@ const Footer = () => {
         {/* Menu Sections */}
         {K.MENU_SECTIONS.map((section, sectionIndex) => (
           <div key={sectionIndex}>
-            <h3 className="text-lg font-bold mb-4 text-rose-300">
+            <h3 className="text-lg font-bold mb-4 text-accent">
               {section.title}
             </h3>
             <ul className="space-y-2">
@@ -57,7 +57,7 @@ const Footer = () => {
                 >
                   <a 
                     href={link.href} 
-                    className="text-gray-300 hover:text-rose-300 transition-colors"
+                    className="text-gray-300 hover:text-accent transition-colors"
                   >
                     {link.name}
                   </a>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-bold mb-4 text-rose-300">
+          <h3 className="text-lg font-bold mb-4 text-accent">
             Connect With Us
           </h3>
           <ul className="space-y-3">
@@ -78,7 +78,7 @@ const Footer = () => {
                 key={index} 
                 className="flex items-center text-gray-300 space-x-3 break-words"
               >
-                <contact.icon className="w-5 h-5 text-rose-400" />
+                <contact.icon className="w-5 h-5 text-accent" />
                 <span className="text-ellipsis overflow-hidden">{contact.text}</span>
               </li>
             ))}
@@ -88,8 +88,8 @@ const Footer = () => {
 
       <div className="mt-10 text-center border-t border-gray-700 pt-6">
         <p className="text-gray-400">
-          © 2024 Ethereal Adornments. 
-          Crafted with <span className="text-rose-400">♥</span> 
+          © 2024 JoyaCoco. 
+          Crafted with <span className="text-accent">♥</span> 
           {" "} | All Rights Reserved
         </p>
       </div>

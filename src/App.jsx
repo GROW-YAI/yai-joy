@@ -1,11 +1,19 @@
 // src/App.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LandingPage from "./pages/landing";
 import { FaArrowUp } from 'react-icons/fa';
 import PreLoader from './components/preloader';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Simulate loading time
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -14,14 +22,10 @@ function App() {
     });
   };
 
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
   return (
     <>
       {isLoading ? (
-        <PreLoader onLoadingComplete={handleLoadingComplete} />
+        <PreLoader />
       ) : (
         <div>
           <LandingPage />

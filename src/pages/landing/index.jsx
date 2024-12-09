@@ -6,17 +6,19 @@ import Services from './components/services';
 import Contact from './components/contact';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
+import Testimonial from './components/testimonials';
 
 const LandingPage = () => {
   return (
     <div className='m-0'>
       <Navbar />
-      <div className="pt-24">
+      {/* <div className="pt-24"> */}
         <Home />
         <About />
         <Services />
+        <Testimonial />
         <Contact />
-      </div>
+      {/* </div> */}
       <Footer />
     </div>
   );
