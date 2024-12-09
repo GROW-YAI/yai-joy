@@ -12,11 +12,11 @@ const Navbar = () => {
     const target = document.getElementById(id);
     if (target) {
       target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: 'smooth', // This ensures smooth scrolling
+        block: 'start', // Scroll to the top of the section
       });
     }
-    setActiveSection(id);
+    setActiveSection(id); // Update the active section state
   };
 
   useEffect(() => {

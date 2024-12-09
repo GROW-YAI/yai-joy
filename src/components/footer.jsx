@@ -19,12 +19,13 @@ const Footer = () => {
           >
             <K.BRAND_INFO.icon className="w-8 h-8 text-accent" />
             <h2 className="text-2xl font-bold font-serif text-accent">
-              {K.BRAND_INFO.name}
+              Joya Foods
             </h2>
           </motion.div>
           
           <p className="text-gray-300 mb-4">
-            {K.BRAND_INFO.description}
+            We specialize in creating delicious and nutritious coconut-based products, 
+            from coconut flakes to coconut oils, bringing the natural goodness of coconuts to your kitchen.
           </p>
           
           <div className="flex space-x-4">
@@ -88,7 +89,7 @@ const Footer = () => {
 
       <div className="mt-10 text-center border-t border-gray-700 pt-6">
         <p className="text-gray-400">
-          © 2024 JoyaCoco. 
+          © 2024 Joya Foods. 
           Crafted with <span className="text-accent">♥</span> 
           {" "} | All Rights Reserved
         </p>
