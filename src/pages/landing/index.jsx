@@ -7,6 +7,9 @@ import Contact from './components/contact';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import Testimonial from './components/testimonials';
+import Service3 from './components/service3';
+import Service2 from './components/service2';
+import Service1 from './components/service1';
 
 const LandingPage = () => {
   return (
@@ -15,6 +18,9 @@ const LandingPage = () => {
       {/* <div className="pt-24"> */}
         <Home />
         <About />
+        <Service2 />
+        <Service1 />
+        <Service3 />
         <Services />
         <Testimonial />
         <Contact />

@@ -1,10 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import K from '../constants';
+import React from "react";
+import { motion } from "framer-motion";
+import K from "../constants";
 
 const Footer = () => {
   return (
-    <motion.footer 
+    <motion.footer
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Section */}
         <div>
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3 mb-4"
           >
@@ -22,12 +22,14 @@ const Footer = () => {
               Joya Foods
             </h2>
           </motion.div>
-          
+
           <p className="text-gray-300 mb-4">
-            We specialize in creating delicious and nutritious coconut-based products, 
-            from coconut flakes to coconut oils, bringing the natural goodness of coconuts to your kitchen.
+            Transforming coconuts into innovative, nutritious products. From
+            refreshing coconut water to versatile coconut flakes, we're
+            dedicated to bringing nature's finest to your table with quality and
+            sustainability.
           </p>
-          
+
           <div className="flex space-x-4">
             {K.SOCIAL_LINKS.map((social, index) => (
               <motion.a
@@ -56,8 +58,8 @@ const Footer = () => {
                   whileHover={{ translateX: 5 }}
                   className="transition-transform"
                 >
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className="text-gray-300 hover:text-accent transition-colors"
                   >
                     {link.name}
@@ -75,12 +77,14 @@ const Footer = () => {
           </h3>
           <ul className="space-y-3">
             {K.CONTACT_INFO.map((contact, index) => (
-              <li 
-                key={index} 
+              <li
+                key={index}
                 className="flex items-center text-gray-300 space-x-3 break-words"
               >
                 <contact.icon className="w-5 h-5 text-accent" />
-                <span className="text-ellipsis overflow-hidden">{contact.text}</span>
+                <span className="text-ellipsis overflow-hidden">
+                  {contact.text}
+                </span>
               </li>
             ))}
           </ul>
@@ -89,9 +93,9 @@ const Footer = () => {
 
       <div className="mt-10 text-center border-t border-gray-700 pt-6">
         <p className="text-gray-400">
-          © 2024 Joya Foods. 
-          Crafted with <span className="text-accent">♥</span> 
-          {" "} | All Rights Reserved
+          © 2024 Joya Foods. Crafting Coconut Excellence{" "}
+          <span className="text-accent">♥</span> | Sustainable. Delicious.
+          Natural.
         </p>
       </div>
     </motion.footer>

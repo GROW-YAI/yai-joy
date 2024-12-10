@@ -1,65 +1,75 @@
 // src/constants/index.jsx
-import React from 'react';
-import { Flower, Sparkle, Feather, Twitter, Facebook, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import React from "react";
+import {
+  Flower,
+  Sparkle,
+  Feather,
+  Twitter,
+  Facebook,
+  Instagram,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 // import { Leaf, Heart, Droplet, ShieldCheck } from 'lucide-react';
-import cocoImg from '../assets/coconut1.jpg';
-import coco1Img from '../assets/coconut2.jpg';
+import cocoImg from "../assets/coconut1.jpg";
+import coco1Img from "../assets/coconut2.jpg";
 
 const K = {
   NAVLINKS: [
-    { 
-      id: 'home', 
-      name: 'Artisan Haven', 
+    {
+      id: "home",
+      name: "Home",
       icon: <Flower className="w-6 h-6" />,
-      color: 'text-rose-500' 
+      color: "text-rose-500",
     },
-    { 
-      id: 'about', 
-      name: 'Our Story', 
+    {
+      id: "about",
+      name: "Our Story",
       icon: <Feather className="w-6 h-6" />,
-      color: 'text-emerald-500' 
+      color: "text-emerald-500",
     },
-    { 
-      id: 'products', 
-      name: 'Handcrafted Creations', 
+    {
+      id: "products",
+      name: "Products",
       icon: <Sparkle className="w-6 h-6" />,
-      color: 'text-amber-500' 
+      color: "text-amber-500",
     },
-    { 
-      id: 'contact', 
-      name: 'Whispers', 
+    {
+      id: "contact",
+      name: "Contact",
       icon: <MapPin className="w-6 h-6" />,
-      color: 'text-emerald-500' 
-    }
+      color: "text-emerald-500",
+    },
   ],
-  
+
   SOCIAL_LINKS: [
-    { 
-      icon: Twitter, 
-      href: "#", 
-      color: "hover:text-blue-400" 
+    {
+      icon: Twitter,
+      href: "#",
+      color: "hover:text-blue-400",
     },
-    { 
-      icon: Facebook, 
-      href: "#", 
-      color: "hover:text-indigo-500" 
+    {
+      icon: Facebook,
+      href: "#",
+      color: "hover:text-indigo-500",
     },
-    { 
-      icon: Instagram, 
-      href: "#", 
-      color: "hover:text-pink-500" 
-    }
+    {
+      icon: Instagram,
+      href: "#",
+      color: "hover:text-pink-500",
+    },
   ],
 
   MENU_SECTIONS: [
     {
       title: "Explore",
       links: [
-        { name: "Artisan Haven", href: "#home" },
-        { name: "Bead Symphony", href: "#collection" },
-        { name: "Crafted Story", href: "#about" },
-        { name: "Contact Us", href: "#contact" }
-      ]
+        { name: "Home", href: "#home" },
+        { name: "Products", href: "#products" },
+        { name: "About", href: "#about" },
+        { name: "Contact Us", href: "#contact" },
+      ],
     },
     {
       title: "Support",
@@ -67,75 +77,72 @@ const K = {
         { name: "Shipping", href: "#" },
         { name: "Returns", href: "#" },
         { name: "FAQs", href: "#" },
-        { name: "Policies", href: "#" }
-      ]
-    }
+        { name: "Policies", href: "#" },
+      ],
+    },
   ],
 
   CONTACT_INFO: [
-    { 
-      icon: MapPin, 
-      text: "203 Ethereal Lane, Artisan Quarter" 
+    {
+      icon: MapPin,
+      text: "123 Coconut Grove, Tropical Business Park",
     },
-    { 
-      icon: Phone, 
-      text: "+1 (555) BEADS-ART" 
+    {
+      icon: Phone,
+      text: "+1 (555) JOYA-COCO",
     },
-    { 
-      icon: Mail, 
-      text: "whispers@etherealadornments.com" 
-    }
+    {
+      icon: Mail,
+      text: "hello@joyafoods.com",
+    },
   ],
 
-  HERO_IMAGES: [
-    { src: cocoImg },
-    { src: coco1Img }
-  ],
+  HERO_IMAGES: [{ src: cocoImg }, { src: coco1Img }],
 
   TESTIMONIALS: [
     {
-      text: "JoyaCoco has been a transformative partner for us. Their dedication to quality not only met our expectations but exceeded them. The innovative coconut products they offer have revitalized our approach to health and wellness, making them an invaluable ally.",
-      author: "John Perry"
+      text: "Joya Foods has been a game-changer in our approach to coconut products. Their commitment to quality and innovation is unmatched. Every product feels like a fresh, natural experience that truly enhances our daily nutrition.",
+      author: "John Perry",
     },
     {
-      text: "The level of care and attention to detail from the JoyaCoco team has been exceptional. Their commitment to sustainable sourcing and ethical practices is truly inspiring. We're proud to partner with them.",
-      author: "Sarah Williams"
+      text: "The sustainability and ethical practices of Joya Foods set them apart. From sourcing to processing, their dedication to environmental responsibility is truly impressive. Their coconut products are not just delicious, but also conscientious.",
+      author: "Sarah Williams",
     },
     {
-      text: "JoyaCoco's coconut products have become an integral part of our wellness routine. The quality and effectiveness are unparalleled, and we appreciate their focus on environmental responsibility.",
-      author: "Michael Chen"
+      text: "Joya Foods' coconut range has become a staple in our household. The purity, taste, and nutritional value of their products are exceptional. It's refreshing to find a brand that prioritizes both health and flavor.",
+      author: "Michael Chen",
     },
     {
-      text: "Working with JoyaCoco has been a game-changer for our business. Their innovative offerings and unwavering support have helped us provide our customers with truly exceptional coconut-based solutions.",
-      author: "Olivia Gonzalez"
-    }
+      text: "Working with Joya Foods has transformed our product lineup. Their innovative coconut solutions and unwavering support have allowed us to offer our customers truly unique and high-quality offerings.",
+      author: "Olivia Gonzalez",
+    },
   ],
 
   BRAND_INFO: {
-    name: 'Joya Foods',
-    description: 'We will elevate your experience with premium coconut products.',
+    name: "Joya Foods",
+    description: "Elevating nutrition through innovative coconut solutions.",
     icon: Flower,
     TEXT: {
-      title: 'Welcome to JoyaCoco!',
-      subtitle: 'Crafted with love from nature.',
-      buttonText: 'Explore Now',
+      title: "Welcome to Joya Foods!",
+      subtitle: "'Nature's bounty, crafted with precision.",
+      buttonText: "Discover Our Products",
     },
   },
 
   ABOUT_SECTION: {
-    title: 'Discover more about us',
-    subtitle: 'Explore our journey, mission, and dedication to quality.',
+    title: "Our Coconut Journey",
+    subtitle: "Transforming coconuts into exceptional nutritional experiences.",
     story: {
-      title: 'Our story: A journey rooted in nature',
-      description: 'Join us at JoyaCoco, where we take pride in being your reliable source for exceptional coconut products. Our narrative is one of dedication to purity and quality, overcoming industry challenges with innovative solutions that foster growth and sustainability.'
+      title: "Our Story: Rooted in Natural Innovation",
+      description:
+        "Joya Foods was born from a passion for coconuts and a commitment to bringing the highest quality coconut products to your table. We've overcome challenges through innovative processing techniques that preserve the natural goodness of coconuts, ensuring every product delivers maximum nutrition and flavor.",
     },
     mission: {
-      title: 'Our mission: Committed to your health and wellness',
-      description: 'At the core of JoyaCoco is a passionate team devoted to promoting your health. We are committed to providing organic, preservative-free coconut products that cater to your lifestyle. Count on us to enhance your wellness journey, opening doors to a world of natural goodness.'
-    }
-  }
-  
+      title: "Our Mission: Nourishing Lives Naturally",
+      description:
+        "At Joya Foods, we're dedicated to transforming coconuts into nutritious, delicious products that support your health and well-being. Our team works tirelessly to develop innovative coconut solutions that are pure, preservative-free, and aligned with your lifestyle, bringing the best of nature directly to you.",
+    },
+  },
 };
 
 export default K;
-
