@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Droplet, Flower, Menu, X } from 'lucide-react';
 import K from '../constants';
+import joyImg from '../assets/joya-logo-nobg.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,10 +69,11 @@ const Navbar = () => {
           className="flex items-center space-x-3 cursor-pointer group"
           onClick={() => scrollToSection('home')}
         >
-          <Flower className="w-8 h-8 text-white group-hover:text-accent transition-colors" />
-          <h1 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
+          {/* <Flower className="w-8 h-8 text-white group-hover:text-accent transition-colors" /> */}
+          <img src={joyImg} alt="Brand Logo" className="w-40 h-12 transition-transform duration-300 group-hover:rotate-12" />
+          {/* <h1 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
             Joya Foods
-          </h1>
+          </h1> */}
         </motion.div>
 
         <div className="hidden md:flex space-x-6 items-center">

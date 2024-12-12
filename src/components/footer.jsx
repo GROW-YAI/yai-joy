@@ -17,7 +17,7 @@ const Footer = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3 mb-4"
           >
-            <K.BRAND_INFO.icon className="w-8 h-8 text-accent" />
+            {/* <K.BRAND_INFO.icon className="w-8 h-8 text-accent" /> */}
             <h2 className="text-2xl font-bold font-serif text-accent">
               Joya Foods
             </h2>

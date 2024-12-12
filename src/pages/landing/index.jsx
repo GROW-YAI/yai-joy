@@ -10,6 +10,7 @@ import Testimonial from './components/testimonials';
 import Service3 from './components/service3';
 import Service2 from './components/service2';
 import Service1 from './components/service1';
+import Service4 from './components/service4';
 
 const LandingPage = () => {
   return (
@@ -18,10 +19,11 @@ const LandingPage = () => {
       {/* <div className="pt-24"> */}
         <Home />
         <About />
+        <Services />
+        <Service4 />
         <Service2 />
         <Service1 />
         <Service3 />
-        <Services />
         <Testimonial />
         <Contact />
       {/* </div> */}

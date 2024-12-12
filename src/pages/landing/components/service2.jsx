@@ -1,7 +1,7 @@
 // src/pages/landing/components/service2.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import coco1Img from '../../../assets/coconut1.jpg';
+import coco1Img from '../../../assets/cocoflakes.jpeg';
 
 const Service2 = () => {
   return (
@@ -23,9 +23,9 @@ const Service2 = () => {
             processes to enhancing efficiency, we work to maximize operational performance, driving
             profitability and ensuring long-term success.
           </p>
-          <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition-colors">
+          {/* <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition-colors">
             Contact
-          </button>
+          </button> */}
         </motion.div>
         {/* Right Image */}
         <motion.div

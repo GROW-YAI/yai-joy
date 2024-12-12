@@ -1,9 +1,9 @@
 // src/pages/landing/components/service1.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import coco2Img from '../../../assets/cocooil2.jpeg';
+import coco2Img from '../../../assets/cocowater.jpeg';
 
-const Service1 = () => {
+const Service4 = () => {
   return (
     <section className="bg-base-100">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
@@ -44,4 +44,4 @@ const Service1 = () => {
   );
 };
 
-export default Service1;
+export default Service4;

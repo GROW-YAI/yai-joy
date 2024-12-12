@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import cocoImg from '../../../assets/coconut1.jpg';
+import cocoImg from '../../../assets/cocotree.jpeg';
+import coco1Img from '../../../assets/cocowater1.jpeg';
 
 const Services = () => {
   return (
@@ -32,9 +33,9 @@ const Services = () => {
               ethical sourcing, ensuring that every product aligns with your values and supports eco-friendly
               practices.
             </p>
-            <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
+            {/* <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
               Contact
-            </button>
+            </button> */}
           </motion.div>
         </div>
 
@@ -48,7 +49,7 @@ const Services = () => {
             transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
             className="flex-1"
           >
-            <img src={cocoImg} alt="Coconut Processing" className="w-full h-full object-cover rounded-lg border-4 border-success" />
+            <img src={coco1Img} alt="Coconut Processing" className="w-full h-full object-cover rounded-lg border-4 border-success" />
           </motion.div>
           {/* Text Section */}
           <motion.div
@@ -64,9 +65,9 @@ const Services = () => {
               production aligns with ethical and eco-friendly practices, delivering high-quality coconut products
               that you can feel good about.
             </p>
-            <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
+            {/* <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
               Learn More
-            </button>
+            </button> */}
           </motion.div>
         </div>
       </div>

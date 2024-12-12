@@ -1,19 +1,20 @@
 // src/constants/index.jsx
 import React from "react";
-import {
-  Flower,
-  Sparkle,
-  Feather,
-  Twitter,
-  Facebook,
-  Instagram,
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
+import {  Flower, Sparkle, Feather, Twitter, Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
 // import { Leaf, Heart, Droplet, ShieldCheck } from 'lucide-react';
 import cocoImg from "../assets/coconut1.jpg";
-import coco1Img from "../assets/coconut2.jpg";
+import cocoflakesImg from "../assets/cocoflakes.jpeg";
+import cocoflakes1Img from "../assets/cocoflakes1.jpeg";
+import cocoflakes2Img from "../assets/cocoflakes2.jpeg";
+import cocooilImg from "../assets/cocooil.jpeg";
+import cocooil1Img from "../assets/cocooil1.jpeg";
+import cocomilkImg from "../assets/cocomilk.jpeg";
+import cocotreeImg from "../assets/cocotree.jpeg";
+import cocowaterImg from "../assets/cocowater.jpeg";
+import cocowater1Img from "../assets/cocowater1.jpeg";
+import cocoflakes5Img from "../assets/cocoflakes3-2.jpeg";
+import cocoflakes3Img from "../assets/cocoflakes3.jpeg";
+import cocoflakes4Img from "../assets/cocoflakes3-1.jpeg";
 
 const K = {
   NAVLINKS: [
@@ -97,7 +98,21 @@ const K = {
     },
   ],
 
-  HERO_IMAGES: [{ src: cocoImg }, { src: coco1Img }],
+  HERO_IMAGES: [
+    { src: cocoImg },
+    { src: cocoflakesImg },
+    { src: cocoflakes1Img },
+    { src: cocoflakes2Img },
+    { src: cocooilImg },
+    { src: cocooil1Img },
+    { src: cocomilkImg },
+    { src: cocotreeImg },
+    { src: cocowaterImg },
+    { src: cocowater1Img },
+    { src: cocoflakes5Img },
+    { src: cocoflakes3Img },
+    { src: cocoflakes4Img },
+  ],
 
   TESTIMONIALS: [
     {
