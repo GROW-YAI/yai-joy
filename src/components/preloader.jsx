@@ -5,7 +5,7 @@ import { Droplet, Leaf } from 'lucide-react';
 const PreLoader = ({ onLoadingComplete }) => {
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [displayText, setDisplayText] = useState('');
-  const brandName = 'JOYA FOODS';
+  const brandName = 'NAGIO LOVE ';
 
   useEffect(() => {
     const totalTime = 2500;

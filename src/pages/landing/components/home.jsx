@@ -37,7 +37,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-8">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-8 mt-12 md:mt-20">
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             {K.BRAND_INFO.name}
           </h1>

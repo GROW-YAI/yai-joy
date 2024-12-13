@@ -7,9 +7,9 @@ const About = () => {
         <div className="grid grid-cols-1 gap-12 relative">
           {/* Section Heading */}
           <div className="text-center">
-            <h2 className="text-4xl font-bold mb-4">About Joya Foods</h2>
-            <p className="text-lg text-secondary">
-              At Joya Foods, we are passionate about bringing the natural goodness of coconuts to your table. Our commitment to quality and sustainability ensures that every product embodies the richness of nature.
+            <h2 className="text-4xl font-bold mb-4">About Nagio Love</h2>
+            <p className="text-lg text-accent">
+              At Nagio Love, we are passionate about bringing the natural goodness of coconuts to your table. Our commitment to quality and sustainability ensures that every product embodies the richness of nature.
             </p>
           </div>
 
@@ -19,7 +19,7 @@ const About = () => {
             <div className="relative border-4 border-success p-8 bg-neutral">
               <h3 className="text-2xl font-bold mb-4 text-primary">Our Story</h3>
               <p className="text-secondary">
-                Joya Foods began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the well-being of our customers.
+                Nagio Love began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the well-being of our customers.
               </p>
               <div className="absolute -top-8 -left-8 bg-primary w-20 h-20 flex justify-center items-center rounded-full border-4 border-success">
                 <span className="text-success font-bold text-2xl">01</span>

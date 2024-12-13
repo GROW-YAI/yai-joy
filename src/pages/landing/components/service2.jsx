@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { motion } from 'framer-motion';
 import coco1Img from '../../../assets/cocoflakes.jpeg';
@@ -18,7 +19,7 @@ const Service2 = () => {
             Wholesome Coconut Flakes
           </h2>
           <p className="text-secondary">
-            Enjoy the goodness of Joya Foods' coconut flakes—crafted to perfection. Available in sweetened and unsweetened varieties, our flakes are free from preservatives, gluten-free, and vegan-friendly, ensuring a nutritious treat for everyone.
+            Enjoy the goodness of Nagio Love's coconut flakes—crafted to perfection. Available in sweetened and unsweetened varieties, our flakes are free from preservatives, gluten-free, and vegan-friendly, ensuring a nutritious treat for everyone.
           </p>
         </motion.div>
         {/* Right Image */}

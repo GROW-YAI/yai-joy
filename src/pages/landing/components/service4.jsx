@@ -33,7 +33,7 @@ const Service4 = () => {
             Pure Hydration
           </h2>
           <p className="text-secondary leading-relaxed">
-            Refresh yourself with Joya Foods' coconut water—nature’s perfect hydration. Packed with electrolytes and essential nutrients, our coconut water is the ultimate drink for rejuvenation and vitality.
+            Refresh yourself with Nagio Love&apos;s coconut water—nature’s perfect hydration. Packed with electrolytes and essential nutrients, our coconut water is the ultimate drink for rejuvenation and vitality.
           </p>
         </motion.div>
       </div>

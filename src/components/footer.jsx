@@ -19,7 +19,7 @@ const Footer = () => {
           >
             {/* <K.BRAND_INFO.icon className="w-8 h-8 text-accent" /> */}
             <h2 className="text-2xl font-bold font-serif text-accent">
-              Joya Foods
+              Nagio Love
             </h2>
           </motion.div>
 
@@ -93,7 +93,7 @@ const Footer = () => {
 
       <div className="mt-10 text-center border-t border-gray-700 pt-6">
         <p className="text-gray-400">
-          © 2024 Joya Foods. Crafting Coconut Excellence{" "}
+          © 2024 Nagio Love. Crafting Coconut Excellence{" "}
           <span className="text-accent">♥</span> | Sustainable. Delicious.
           Natural.
         </p>

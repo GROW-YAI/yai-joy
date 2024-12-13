@@ -72,15 +72,15 @@ const K = {
         { name: "Contact Us", href: "#contact" },
       ],
     },
-    {
-      title: "Support",
-      links: [
-        { name: "Shipping", href: "#" },
-        { name: "Returns", href: "#" },
-        { name: "FAQs", href: "#" },
-        { name: "Policies", href: "#" },
-      ],
-    },
+    // {
+    //   title: "Support",
+    //   links: [
+    //     { name: "Shipping", href: "#" },
+    //     { name: "Returns", href: "#" },
+    //     { name: "FAQs", href: "#" },
+    //     { name: "Policies", href: "#" },
+    //   ],
+    // },
   ],
 
   CONTACT_INFO: [
@@ -90,11 +90,11 @@ const K = {
     },
     {
       icon: Phone,
-      text: "+1 (555) JOYA-COCO",
+      text: "+233 55 469 2468",
     },
     {
       icon: Mail,
-      text: "hello@joyafoods.com",
+      text: "Nagiolove.ent@gmail.com",
     },
   ],
 
@@ -116,29 +116,29 @@ const K = {
 
   TESTIMONIALS: [
     {
-      text: "Joya Foods has been a game-changer in our approach to coconut products. Their commitment to quality and innovation is unmatched. Every product feels like a fresh, natural experience that truly enhances our daily nutrition.",
+      text: "Nagio Love has been a game-changer in our approach to coconut products. Their commitment to quality and innovation is unmatched. Every product feels like a fresh, natural experience that truly enhances our daily nutrition.",
       author: "John Perry",
     },
     {
-      text: "The sustainability and ethical practices of Joya Foods set them apart. From sourcing to processing, their dedication to environmental responsibility is truly impressive. Their coconut products are not just delicious, but also conscientious.",
+      text: "The sustainability and ethical practices of Nagio Love set them apart. From sourcing to processing, their dedication to environmental responsibility is truly impressive. Their coconut products are not just delicious, but also conscientious.",
       author: "Sarah Williams",
     },
     {
-      text: "Joya Foods' coconut range has become a staple in our household. The purity, taste, and nutritional value of their products are exceptional. It's refreshing to find a brand that prioritizes both health and flavor.",
+      text: "Nagio Love' coconut range has become a staple in our household. The purity, taste, and nutritional value of their products are exceptional. It's refreshing to find a brand that prioritizes both health and flavor.",
       author: "Michael Chen",
     },
     {
-      text: "Working with Joya Foods has transformed our product lineup. Their innovative coconut solutions and unwavering support have allowed us to offer our customers truly unique and high-quality offerings.",
+      text: "Working with Nagio Love has transformed our product lineup. Their innovative coconut solutions and unwavering support have allowed us to offer our customers truly unique and high-quality offerings.",
       author: "Olivia Gonzalez",
     },
   ],
 
   BRAND_INFO: {
-    name: "Joya Foods",
+    name: "Nagio Love",
     description: "Bringing you the richness of coconuts in every sip and bite. Explore our premium coconut-based products, crafted to nourish your body and delight your senses.",
     icon: Flower,
     TEXT: {
-      title: "Welcome to Joya Foods!",
+      title: "Welcome to Nagio Love!",
       subtitle: "'Nature's bounty, crafted with precision.",
       buttonText: "Discover Our Products",
     },
@@ -150,12 +150,12 @@ const K = {
     story: {
       title: "Our Story: Rooted in Natural Innovation",
       description:
-        "Joya Foods was born from a passion for coconuts and a commitment to bringing the highest quality coconut products to your table. We've overcome challenges through innovative processing techniques that preserve the natural goodness of coconuts, ensuring every product delivers maximum nutrition and flavor.",
+        "Nagio Love was born from a passion for coconuts and a commitment to bringing the highest quality coconut products to your table. We've overcome challenges through innovative processing techniques that preserve the natural goodness of coconuts, ensuring every product delivers maximum nutrition and flavor.",
     },
     mission: {
       title: "Our Mission: Nourishing Lives Naturally",
       description:
-        "At Joya Foods, we're dedicated to transforming coconuts into nutritious, delicious products that support your health and well-being. Our team works tirelessly to develop innovative coconut solutions that are pure, preservative-free, and aligned with your lifestyle, bringing the best of nature directly to you.",
+        "At Nagio Love, we're dedicated to transforming coconuts into nutritious, delicious products that support your health and well-being. Our team works tirelessly to develop innovative coconut solutions that are pure, preservative-free, and aligned with your lifestyle, bringing the best of nature directly to you.",
     },
   },
 };

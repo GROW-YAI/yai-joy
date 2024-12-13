@@ -33,7 +33,7 @@ const Services = () => {
           >
             <h2 className="text-3xl font-bold mb-4 text-primary">Sustainable Sourcing</h2>
             <p className="text-secondary mb-6">
-              At Joya Foods, we believe in sustainability from the ground up. Our coconuts are ethically sourced to preserve the environment and support local farmers, ensuring quality you can trust.
+              At Nagio Love, we believe in sustainability from the ground up. Our coconuts are ethically sourced to preserve the environment and support local farmers, ensuring quality you can trust.
             </p>
           </motion.div>
         </div>
@@ -64,7 +64,7 @@ const Services = () => {
           >
             <h2 className="text-3xl font-bold mb-4 text-primary">Eco-Friendly Processing</h2>
             <p className="text-secondary mb-6">
-              Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Joya Foods is committed to delivering products that are good for you and the planet.
+              Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Nagio Love is committed to delivering products that are good for you and the planet.
             </p>
           </motion.div>
         </div>
