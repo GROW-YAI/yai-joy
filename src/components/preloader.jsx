@@ -14,11 +14,15 @@ const PreLoader = ({ onLoadingComplete }) => {
 
     // Typing effect for brand name
     const typeText = () => {
-      brandName.split('').forEach((char, index) => {
-        setTimeout(() => {
-          setDisplayText(prev => prev + char);
-        }, 100 * index);
-      });
+      let index = 0;
+      const intervalId = setInterval(() => {
+        if (index < brandName.length) {
+          setDisplayText(() => brandName);
+          index += 1;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 100);
     };
 
     const timer = setInterval(() => {
