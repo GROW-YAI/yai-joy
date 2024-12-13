@@ -44,9 +44,9 @@ const Home = () => {
           <p className="text-base md:text-lg mb-8 text-center">
             {K.BRAND_INFO.description}
           </p>
-          <button className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition-colors duration-300">
+          {/* <button className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition-colors duration-300">
             Discover More
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
