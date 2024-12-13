@@ -135,7 +135,7 @@ const K = {
 
   BRAND_INFO: {
     name: "Joya Foods",
-    description: "Elevating nutrition through innovative coconut solutions.",
+    description: "Bringing you the richness of coconuts in every sip and bite. Explore our premium coconut-based products, crafted to nourish your body and delight your senses.",
     icon: Flower,
     TEXT: {
       title: "Welcome to Joya Foods!",

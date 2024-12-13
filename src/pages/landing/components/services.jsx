@@ -17,7 +17,7 @@ const Services = () => {
             transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
             className="flex-1"
           >
-            <img src={cocoImg} alt="Coconut Product" className="w-full h-full object-cover rounded-lg border-4 border-success" />
+            <img src={cocoImg} alt="Coconut Sourcing" className="w-full h-full object-cover rounded-lg border-4 border-success" />
           </motion.div>
           {/* Text Section */}
           <motion.div
@@ -29,13 +29,8 @@ const Services = () => {
           >
             <h2 className="text-3xl font-bold mb-4 text-primary">Sustainable Sourcing</h2>
             <p className="text-secondary mb-6">
-              Leverage our commitment to sustainability to enjoy high-quality coconut products. We prioritize
-              ethical sourcing, ensuring that every product aligns with your values and supports eco-friendly
-              practices.
+              At Joya Foods, we believe in sustainability from the ground up. Our coconuts are ethically sourced to preserve the environment and support local farmers, ensuring quality you can trust.
             </p>
-            {/* <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
-              Contact
-            </button> */}
           </motion.div>
         </div>
 
@@ -59,15 +54,10 @@ const Services = () => {
             transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
             className="flex-1 pr-8"
           >
-            <h2 className="text-3xl font-bold mb-4 text-primary">Ethical Processing</h2>
+            <h2 className="text-3xl font-bold mb-4 text-primary">Eco-Friendly Processing</h2>
             <p className="text-secondary mb-6">
-              Our commitment to sustainability extends to our processing methods. We ensure that every step of
-              production aligns with ethical and eco-friendly practices, delivering high-quality coconut products
-              that you can feel good about.
+              Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Joya Foods is committed to delivering products that are good for you and the planet.
             </p>
-            {/* <button className="bg-success text-white px-6 py-3 rounded-full hover:bg-primary transition-colors">
-              Learn More
-            </button> */}
           </motion.div>
         </div>
       </div>

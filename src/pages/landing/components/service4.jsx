@@ -1,4 +1,3 @@
-// src/pages/landing/components/service1.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import coco2Img from '../../../assets/cocowater.jpeg';
@@ -17,7 +16,7 @@ const Service4 = () => {
         >
           <img
             src={coco2Img}
-            alt="Quality Innovation"
+            alt="Coconut Water"
             className="w-full h-[400px] object-cover"
           />
         </motion.div>
@@ -30,14 +29,11 @@ const Service4 = () => {
           className="flex flex-col justify-center items-start py-8 px-4 md:px-12 space-y-6"
         >
           <h2 className="text-3xl font-bold text-primary">
-            Quality innovation
+            Pure Hydration
           </h2>
           <p className="text-secondary">
-            Stay nourished with our innovative coconut offerings. We provide tailored products that meet your specific needs, empowering you to embrace a healthier lifestyle with ease.
+            Refresh yourself with Joya Foods' coconut water—nature’s perfect hydration. Packed with electrolytes and essential nutrients, our coconut water is the ultimate drink for rejuvenation and vitality.
           </p>
-          {/* <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition-colors">
-            Contact
-          </button> */}
         </motion.div>
       </div>
     </section>

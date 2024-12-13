@@ -1,4 +1,3 @@
-// src/pages/landing/components/service2.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import coco1Img from '../../../assets/cocoflakes.jpeg';
@@ -16,16 +15,11 @@ const Service2 = () => {
           className="flex flex-col justify-center items-start py-8 px-4 md:px-12 space-y-6"
         >
           <h2 className="text-3xl font-bold text-primary">
-            Business optimization
+            Wholesome Coconut Flakes
           </h2>
           <p className="text-secondary">
-            Unlock your business's full potential through our optimization services. From streamlining
-            processes to enhancing efficiency, we work to maximize operational performance, driving
-            profitability and ensuring long-term success.
+            Enjoy the goodness of Joya Foods' coconut flakes—crafted to perfection. Available in sweetened and unsweetened varieties, our flakes are free from preservatives, gluten-free, and vegan-friendly, ensuring a nutritious treat for everyone.
           </p>
-          {/* <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition-colors">
-            Contact
-          </button> */}
         </motion.div>
         {/* Right Image */}
         <motion.div
@@ -37,7 +31,7 @@ const Service2 = () => {
         >
           <img
             src={coco1Img}
-            alt="Business Optimization"
+            alt="Coconut Flakes"
             className="w-full h-full object-cover"
           />
         </motion.div>

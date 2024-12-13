@@ -1,5 +1,3 @@
-
-// src/pages/landing/components/service3.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import coco1Img from '../../../assets/cocomilk.jpeg';
@@ -17,16 +15,11 @@ const Service3 = () => {
           className="flex flex-col justify-center items-start py-8 px-4 md:px-12 space-y-6"
         >
           <h2 className="text-3xl font-bold text-primary">
-            Business optimization
+            Creamy Coconut Milk
           </h2>
           <p className="text-secondary">
-            Unlock your business's full potential through our optimization services. From streamlining
-            processes to enhancing efficiency, we work to maximize operational performance, driving
-            profitability and ensuring long-term success.
+            Elevate your recipes with Joya Foods' creamy coconut milk. Perfect for curries, smoothies, and desserts, our coconut milk delivers unparalleled richness and flavor to your dishes.
           </p>
-          {/* <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-accent transition-colors">
-            Contact
-          </button> */}
         </motion.div>
         {/* Right Image */}
         <motion.div
@@ -38,7 +31,7 @@ const Service3 = () => {
         >
           <img
             src={coco1Img}
-            alt="Business Optimization"
+            alt="Creamy Coconut Milk"
             className="w-full h-full object-cover"
           />
         </motion.div>

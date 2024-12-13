@@ -41,7 +41,7 @@ const Home = () => {
           <h1 className="text-4xl font-bold mb-4">{K.BRAND_INFO.name}</h1>
           <p className="text-lg mb-8">{K.BRAND_INFO.description}</p>
           <button className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition-colors duration-300">
-            Services
+          Discover More
           </button>
         </div>
       </div>
