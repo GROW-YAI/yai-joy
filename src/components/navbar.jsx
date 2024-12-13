@@ -76,7 +76,7 @@ const Navbar = () => {
           className="flex items-center space-x-3 cursor-pointer group"
           onClick={() => scrollToSection('home')}
         >
-          <img src={joyImg} alt="Brand Logo" className="w-24 h-auto transition-transform duration-300 group-hover:rotate-12" />
+          <img src={joyImg} alt="Brand Logo" className="w-auto h-12 transition-transform duration-300 group-hover:rotate-12" />
         </motion.div>
 
         <div className="hidden md:flex space-x-8 items-center">
