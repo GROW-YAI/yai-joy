@@ -12,14 +12,20 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const target = document.getElementById(id);
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-      setActiveSection(id);
+      // Close the menu first to avoid interference
       setIsMenuOpen(false);
+  
+      // Scroll after the menu is closed
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+        setActiveSection(id);
+      }, 100); // Slight delay for smoother interaction
     }
   };
+  
 
   useEffect(() => {
     const handleIntersection = (entries) => {
