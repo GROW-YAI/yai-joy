@@ -14,9 +14,9 @@ const Home = () => {
 
   return (
     <section id="home" className="pt-0">
-      <div className="flex h-screen">
+      <div className="flex flex-col md:flex-row h-screen">
         {/* Left Side - Image Carousel */}
-        <div className="w-1/2 relative">
+        <div className="relative w-full md:w-1/2 h-2/5 md:h-full">
           <img
             src={K.HERO_IMAGES[currentSlide].src}
             alt="Slide Image"
@@ -37,11 +37,15 @@ const Home = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="w-1/2 flex flex-col justify-center items-center p-8">
-          <h1 className="text-4xl font-bold mb-4">{K.BRAND_INFO.name}</h1>
-          <p className="text-lg mb-8">{K.BRAND_INFO.description}</p>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-8">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+            {K.BRAND_INFO.name}
+          </h1>
+          <p className="text-base md:text-lg mb-8 text-center">
+            {K.BRAND_INFO.description}
+          </p>
           <button className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-700 transition-colors duration-300">
-          Discover More
+            Discover More
           </button>
         </div>
       </div>

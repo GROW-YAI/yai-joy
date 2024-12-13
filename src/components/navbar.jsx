@@ -13,11 +13,12 @@ const Navbar = () => {
     const target = document.getElementById(id);
     if (target) {
       target.scrollIntoView({
-        behavior: 'smooth', // This ensures smooth scrolling
-        block: 'start', // Scroll to the top of the section
+        behavior: 'smooth',
+        block: 'start',
       });
+      setActiveSection(id);
+      setIsMenuOpen(false);
     }
-    setActiveSection(id); // Update the active section state
   };
 
   useEffect(() => {
@@ -32,7 +33,7 @@ const Navbar = () => {
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6, // Trigger when 60% of the section is in view
+      threshold: 0.6,
     });
 
     const sections = document.querySelectorAll('section');
@@ -69,21 +70,17 @@ const Navbar = () => {
           className="flex items-center space-x-3 cursor-pointer group"
           onClick={() => scrollToSection('home')}
         >
-          {/* <Flower className="w-8 h-8 text-white group-hover:text-accent transition-colors" /> */}
-          <img src={joyImg} alt="Brand Logo" className="w-40 h-12 transition-transform duration-300 group-hover:rotate-12" />
-          {/* <h1 className="text-xl font-bold text-white group-hover:text-accent transition-colors">
-            Joya Foods
-          </h1> */}
+          <img src={joyImg} alt="Brand Logo" className="w-24 h-auto transition-transform duration-300 group-hover:rotate-12" />
         </motion.div>
 
-        <div className="hidden md:flex space-x-6 items-center">
+        <div className="hidden md:flex space-x-8 items-center">
           {K.NAVLINKS.map((link) => (
             <motion.button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
               whileHover={{ scale: 1.1, translateY: -2 }}
               whileTap={{ scale: 0.95 }}
-              className={`text-white transition-all ${
+              className={`text-white text-lg transition-all ${
                 activeSection === link.id ? 'font-bold text-accent' : 'hover:text-accent'
               }`}
             >
@@ -113,9 +110,8 @@ const Navbar = () => {
                   key={link.id}
                   onClick={() => {
                     scrollToSection(link.id);
-                    setIsMenuOpen(false);
                   }}
-                  className={`block w-full p-4 hover:bg-accent/20 ${
+                  className={`block w-full p-4 hover:bg-accent/20 transition-colors ${
                     activeSection === link.id ? 'bg-accent/30' : ''
                   }`}
                 >
