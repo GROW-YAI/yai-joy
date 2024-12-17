@@ -17,7 +17,7 @@ const Service4 = () => {
           <img
             src={coco2Img}
             alt="Coconut Water"
-            className="w-full h-auto max-h-[400px] object-cover rounded-lg shadow-md"
+            className="w-full h-auto max-h-[400px] object-cover"
           />
         </motion.div>
 

@@ -140,7 +140,7 @@ const K = {
   ],
 
   BRAND_INFO: {
-    name: "Nagio Love",
+    name: "Nagio Love Enterprise",
     description: "Bringing you the richness of coconuts in every sip and bite. Explore our premium coconut-based products, crafted to nourish your body and delight your senses.",
     icon: Flower,
     TEXT: {
