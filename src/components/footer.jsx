@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import K from "../constants";
+import joyaLogo from "../assets/joya-logo.jpg"; 
 
 const Footer = () => {
   return (
@@ -89,6 +90,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+        <img src={joyaLogo} alt="Nagio Love Logo" className="w-44 h-auto" />
       </div>
 
       <div className="mt-10 text-center border-t border-gray-700 pt-6">
