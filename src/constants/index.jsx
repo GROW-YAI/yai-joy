@@ -2,6 +2,7 @@
 import React from "react";
 import {  Flower, Sparkle, Feather, Twitter, Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
 // import { Leaf, Heart, Droplet, ShieldCheck } from 'lucide-react';
+import { FaTiktok } from 'react-icons/fa';
 import cocoImg from "../assets/coconut1.jpg";
 import cocoflakesImg from "../assets/cocoflakes.jpeg";
 import cocoflakes1Img from "../assets/cocoflakes1.jpeg";
@@ -47,19 +48,24 @@ const K = {
   SOCIAL_LINKS: [
     {
       icon: Twitter,
-      href: "#",
+      href: "https://x.com/Joya_coc?s=09",
       color: "hover:text-blue-400",
     },
     {
       icon: Facebook,
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=100063503170902&mibextid=ZbWKwL",
       color: "hover:text-indigo-500",
     },
     {
       icon: Instagram,
-      href: "#",
+      href: "https://www.instagram.com/joyacoco?igsh=OGQ5ZDc2ODk2ZA==",
       color: "hover:text-pink-500",
     },
+    {
+      icon: FaTiktok,
+      href: "https://www.tiktok.com/@joyafoods_gh?_t=8sEoZs8WfOH&_r=1",
+      color: "hover:text-white",
+    }
   ],
 
   MENU_SECTIONS: [
