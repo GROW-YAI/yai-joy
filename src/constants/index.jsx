@@ -90,10 +90,10 @@ const K = {
   ],
 
   CONTACT_INFO: [
-    {
-      icon: MapPin,
-      text: "123 Coconut Grove, Tropical Business Park",
-    },
+    // {
+    //   icon: MapPin,
+    //   text: "123 Coconut Grove, Tropical Business Park",
+    // },
     {
       icon: Phone,
       text: "+233 55 469 2468",
