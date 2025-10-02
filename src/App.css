@@ -3,17 +3,22 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
+/* Responsive logo */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  max-width: 100%;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -27,16 +32,124 @@
   }
 }
 
+/* Responsive card */
+.card {
+  padding: 2em;
+  margin: 1rem 0;
+}
+
+.read-the-docs {
+  color: #888;
+  margin: 1rem 0;
+}
+
+/* Mobile First Responsive Design */
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #root {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+  
+  .card {
+    padding: 1em;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+  
+  .logo {
+    height: 5em;
+    padding: 1.25em;
+  }
+  
+  .card {
+    padding: 1.5em;
+  }
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #root {
+    max-width: 1280px;
+  }
+}
+
+/* Reduced motion support */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .read-the-docs {
+    color: #000;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .read-the-docs {
+    color: #ccc;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .logo:hover {
+    filter: none;
+  }
+  
+  .logo:active {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  
+  .logo.react:active {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+}
+
+/* Print styles */
+@media print {
+  #root {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .logo {
+    filter: grayscale(100%) !important;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
 }

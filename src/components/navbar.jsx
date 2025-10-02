@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Droplet, Flower, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import K from '../constants';
 import joyImg from '../assets/joya-logo-nobg.png';
 
@@ -12,20 +12,13 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const target = document.getElementById(id);
     if (target) {
-      // Close the menu first to avoid interference
       setIsMenuOpen(false);
-  
-      // Scroll after the menu is closed
       setTimeout(() => {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
+        target.scrollIntoView({ behavior: 'smooth' });
         setActiveSection(id);
-      }, 100); // Slight delay for smoother interaction
+      }, 100);
     }
   };
-  
 
   useEffect(() => {
     const handleIntersection = (entries) => {
@@ -37,8 +30,6 @@ const Navbar = () => {
     };
 
     const observer = new IntersectionObserver(handleIntersection, {
-      root: null,
-      rootMargin: '0px',
       threshold: 0.6,
     });
 
@@ -58,71 +49,67 @@ const Navbar = () => {
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   return (
     <motion.nav
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
-      className="fixed top-0 left-0 w-full z-50 bg-primary text-white backdrop-blur-md shadow-md"
+      className="fixed top-0 left-0 w-full z-50 bg-primary/95 backdrop-blur-md shadow-lg py-3"
     >
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center relative" ref={menuRef}>
+      <div className="container mx-auto px-5 flex justify-between items-center" ref={menuRef}>
+        {/* Logo */}
         <motion.div
-          whileHover={{ scale: 1.05, rotate: 3 }}
-          className="flex items-center space-x-3 cursor-pointer group"
+          whileHover={{ scale: 1.05 }}
+          className="flex items-center cursor-pointer"
           onClick={() => scrollToSection('home')}
         >
-          <img src={joyImg} alt="Nagio Love Logo" className="w-44 h-10 transition-transform duration-300 group-hover:rotate-12" />
+          <img src={joyImg} alt="Logo" className="w-32 h-8 md:w-44 md:h-10" />
         </motion.div>
 
-        <div className="hidden md:flex space-x-8 items-center">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-6">
           {K.NAVLINKS.map((link) => (
-            <motion.button
+            <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              whileHover={{ scale: 1.1, translateY: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className={`text-white text-lg transition-all ${
-                activeSection === link.id ? 'font-bold text-accent' : 'hover:text-accent'
+              className={`text-white transition-colors ${
+                activeSection === link.id ? 'text-accent font-semibold' : 'hover:text-accent'
               }`}
             >
               {link.name}
-            </motion.button>
+            </button>
           ))}
         </div>
 
-        <motion.button
-          whileTap={{ scale: 0.9 }}
+        {/* Mobile Menu Button */}
+        <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-white"
+          className="md:hidden text-white p-2"
         >
-          {isMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
-        </motion.button>
+          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
 
+        {/* Mobile Menu */}
         <AnimatePresence>
           {isMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              className="absolute top-full left-0 w-full bg-primary text-white shadow-md md:hidden"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              className="absolute top-full left-0 w-full bg-primary shadow-lg md:hidden"
             >
               {K.NAVLINKS.map((link) => (
-                <motion.button
+                <button
                   key={link.id}
-                  onClick={() => {
-                    scrollToSection(link.id);
-                  }}
-                  className={`block w-full p-4 hover:bg-accent/20 transition-colors ${
-                    activeSection === link.id ? 'bg-accent/30' : ''
+                  onClick={() => scrollToSection(link.id)}
+                  className={`block w-full p-4 text-left text-white transition-colors ${
+                    activeSection === link.id ? 'bg-accent/20 text-accent' : 'hover:bg-white/10'
                   }`}
                 >
                   {link.name}
-                </motion.button>
+                </button>
               ))}
             </motion.div>
           )}
