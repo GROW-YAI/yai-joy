@@ -33,7 +33,7 @@ const Service1 = () => {
             Virgin Coconut Oil
           </h2>
           <p className="text-secondary text-base sm:text-lg md:text-xl leading-relaxed text-center lg:text-left">
-            Experience the purest form of nourishment with Nagio Love's cold-pressed virgin coconut oil. Perfect for cooking, skincare, and haircare, our oil retains all its natural goodness to enrich your lifestyle.
+            Experience the purest form of nourishment with Joya Foods' cold-pressed virgin coconut oil. Perfect for cooking, skincare, and haircare, our oil retains all its natural goodness to enrich your lifestyle.
           </p>
           
         </motion.div>

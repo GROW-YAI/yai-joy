@@ -34,15 +34,16 @@ function App() {
         <PreLoader />
       ) : (
         <Router>
-          <Routes>
-            {/* Define route for the landing page */}
-            <Route path="/" element={<LandingPage />} />
+          {/* Main content wrapper with top padding to account for fixed navbar */}
+          <div className="pt-24"> {/* Add this wrapper div */}
+            <Routes>
+              {/* Define route for the landing page */}
+              <Route path="/" element={<LandingPage />} />
 
-            {/* Catch-all route for 404 */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          {/* <div>
-          <LandingPage /> */}
+              {/* Catch-all route for 404 */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
 
           {/* Scroll to Top Button */}
           <button
@@ -52,7 +53,6 @@ function App() {
           >
             <FaArrowUp size={24} />
           </button>
-          {/* </div> */}
         </Router>
       )}
     </ErrorBoundary>

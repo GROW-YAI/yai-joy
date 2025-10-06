@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import K from "../constants";
-import joyaLogo from "../assets/joya-logo-nobg.png"; 
+import joyaLogo from "../assets/joya-logo-new.png"; 
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
             >
               {/* <K.BRAND_INFO.icon className="w-8 h-8 text-accent" /> */}
               <h2 className="text-xl sm:text-2xl font-bold font-serif text-accent">
-                Nagio Love
+                Joya Foods
               </h2>
             </motion.div>
 
@@ -98,7 +98,7 @@ const Footer = () => {
           <div className="xs:col-span-2 md:col-span-2 lg:col-span-1 flex justify-center md:justify-start lg:justify-center items-start">
             <img 
               src={joyaLogo} 
-              alt="Nagio Love Logo" 
+              alt="Joya Foods Logo" 
               className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto max-w-full"
             />
           </div>
@@ -107,7 +107,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 sm:mt-10 text-center border-t border-gray-700 pt-4 sm:pt-6">
           <p className="text-gray-400 text-xs sm:text-sm">
-            © 2024 Nagio Love. Crafting Coconut Excellence{" "}
+            © 2024 Joya Foods. Crafting Coconut Excellence{" "}
             <span className="text-accent">♥</span> | Sustainable. Delicious.
             Natural.
           </p>

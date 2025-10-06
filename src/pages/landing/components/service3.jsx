@@ -18,7 +18,7 @@ const Service3 = () => {
             Creamy Coconut Milk
           </h2>
           <p className="text-secondary text-base sm:text-lg md:text-xl text-center lg:text-left w-full">
-            Elevate your recipes with Nagio Love's creamy coconut milk. Perfect for curries, smoothies, and desserts, our coconut milk delivers unparalleled richness and flavor to your dishes.
+            Elevate your recipes with Joya Foods' creamy coconut milk. Perfect for curries, smoothies, and desserts, our coconut milk delivers unparalleled richness and flavor to your dishes.
           </p>
         </motion.div>
         

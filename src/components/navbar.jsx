@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import K from '../constants';
-import joyImg from '../assets/joya-logo-nobg.png';
+import joyImg from '../assets/joya-logo-new.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +65,7 @@ const Navbar = () => {
           className="flex items-center cursor-pointer"
           onClick={() => scrollToSection('home')}
         >
-          <img src={joyImg} alt="Logo" className="w-32 h-8 md:w-44 md:h-10" />
+          <img src={joyImg} alt="Logo" className="w-16 h-12 md:w-36 md:h-20" />
         </motion.div>
 
         {/* Desktop Navigation */}
