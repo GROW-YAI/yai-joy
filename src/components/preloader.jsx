@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Leaf, Droplet } from 'lucide-react';
 import joyaLogo from "../assets/joya-logo-new.png";
 
 const PreLoader = ({ onLoadingComplete }) => {
@@ -12,7 +11,6 @@ const PreLoader = ({ onLoadingComplete }) => {
     const interval = 50;
     const steps = totalTime / interval;
 
-    // Show logo after a brief delay for dramatic effect
     const logoTimer = setTimeout(() => {
       setIsLogoVisible(true);
     }, 300);
@@ -52,82 +50,26 @@ const PreLoader = ({ onLoadingComplete }) => {
       <div className="relative w-full max-w-md px-4">
         
         {/* Main Logo Container */}
-        <div className="relative mb-8 md:mb-12 flex justify-center">
-          {/* Floating Background Elements */}
-          <motion.div
-            className="absolute -top-8 -left-8 opacity-20"
-            animate={{ 
-              rotate: [0, 15, 0],
-              scale: [1, 1.1, 1]
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          >
-            <Leaf className="w-16 h-16 md:w-20 md:h-20 text-white" />
-          </motion.div>
-
-          <motion.div
-            className="absolute -bottom-6 -right-6 opacity-20"
-            animate={{ 
-              rotate: [0, -15, 0],
-              scale: [1, 1.05, 1]
-            }}
-            transition={{
-              duration: 3.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          >
-            <Droplet className="w-14 h-14 md:w-18 md:h-18 text-white" />
-          </motion.div>
-
-          {/* Main Logo */}
+        <div className="relative mb-12 flex justify-center">
           <motion.div
             initial={{ 
               scale: 0.8,
-              opacity: 0,
-              rotateY: 90
+              opacity: 0
             }}
             animate={isLogoVisible ? {
               scale: 1,
-              opacity: 1,
-              rotateY: 0
+              opacity: 1
             } : {}}
             transition={{
-              duration: 1.2,
+              duration: 1,
               ease: [0.23, 1, 0.32, 1]
             }}
             className="relative z-10"
           >
-            <motion.img
+            <img
               src={joyaLogo}
               alt="JOYA FOODS"
               className="w-48 h-48 md:w-64 md:h-64 drop-shadow-2xl"
-              animate={{
-                y: [0, -8, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            />
-            
-            {/* Glow Effect */}
-            <motion.div
-              className="absolute inset-0 bg-white/10 rounded-full blur-xl"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.5, 0.3]
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
             />
           </motion.div>
         </div>
@@ -135,7 +77,7 @@ const PreLoader = ({ onLoadingComplete }) => {
         {/* Loading Bar Container */}
         <div className="space-y-4">
           {/* Loading Bar */}
-          <div className="w-full bg-white/20 rounded-full h-2 overflow-hidden backdrop-blur-sm">
+          <div className="w-full bg-white/20 rounded-full h-2.5 overflow-hidden backdrop-blur-sm">
             <motion.div
               initial={{ scaleX: 0 }}
               animate={{ scaleX: loadingProgress / 100 }}
@@ -143,21 +85,8 @@ const PreLoader = ({ onLoadingComplete }) => {
                 duration: 0.3, 
                 ease: "easeOut" 
               }}
-              className="h-full bg-gradient-to-r from-white to-[#97BC62] origin-left rounded-full relative"
-            >
-              {/* Shimmer Effect */}
-              <motion.div
-                className="absolute inset-0 bg-white/40"
-                animate={{
-                  x: ['-100%', '100%']
-                }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-            </motion.div>
+              className="h-full bg-gradient-to-r from-white to-[#97BC62] origin-left rounded-full"
+            />
           </div>
 
           {/* Loading Text */}
@@ -165,27 +94,10 @@ const PreLoader = ({ onLoadingComplete }) => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="text-center text-white/80 text-sm md:text-base font-light tracking-wider"
+            className="text-center text-white/90 text-sm md:text-base font-light tracking-wide"
           >
             Preparing Nature's Goodness... {Math.round(loadingProgress)}%
           </motion.p>
-        </div>
-
-        {/* Subtle Background Pattern */}
-        <div className="absolute inset-0 overflow-hidden opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-32 h-32 border-2 border-white rounded-full"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-24 h-24 border border-white rounded-full"></div>
-          <motion.div
-            className="absolute top-1/3 right-1/3 w-16 h-16 border border-white rounded-full"
-            animate={{
-              scale: [1, 1.5, 1],
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          />
         </div>
       </div>
     </motion.div>
