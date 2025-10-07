@@ -22,9 +22,9 @@ const Testimonial = () => {
         </h2>
         
         {/* testimonial container */}
-        <div className="relative border-2 border-dashed border-accent bg-gray-900 text-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg max-w-full sm:max-w-2xl lg:max-w-3xl mx-auto">
+        <div className="relative border-2 border-dashed border-accent bg-gray-800 text-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg max-w-full sm:max-w-2xl lg:max-w-3xl mx-auto">
           {/* testimonial text */}
-          <p className="text-base sm:text-lg lg:text-lg italic text-gray-300 mb-4 sm:mb-5 lg:mb-6 leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-lg italic text-gray-200 mb-4 sm:mb-5 lg:mb-6 leading-relaxed">
             "{TESTIMONIALS[currentIndex].text}"
           </p>
           

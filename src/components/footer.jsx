@@ -27,9 +27,7 @@ const Footer = () => {
             </motion.div>
 
             <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-              Transforming coconuts into innovative, nutritious products. From
-              refreshing coconut water to versatile coconut flakes, we're
-              dedicated to bringing nature's finest to your table with quality and
+              Transforming coconuts into innovative, nutritious products. From refreshing coconut water to versatile coconut flakes, we're dedicated to bringing nature's finest to your table with quality and
               sustainability.
             </p>
 
@@ -98,7 +96,7 @@ const Footer = () => {
           <div className="xs:col-span-2 md:col-span-2 lg:col-span-1 flex justify-center md:justify-start lg:justify-center items-start">
             <img 
               src={joyaLogo} 
-              alt="Joya Foods Logo" 
+              alt="Joya Foods" 
               className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto max-w-full"
             />
           </div>

@@ -82,7 +82,7 @@ const PreLoader = ({ onLoadingComplete }) => {
               initial={{ scaleX: 0 }}
               animate={{ scaleX: loadingProgress / 100 }}
               transition={{ 
-                duration: 0.3, 
+                duration: 0.4, 
                 ease: "easeOut" 
               }}
               className="h-full bg-gradient-to-r from-white to-[#97BC62] origin-left rounded-full"

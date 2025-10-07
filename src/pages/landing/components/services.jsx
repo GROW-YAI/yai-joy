@@ -69,7 +69,7 @@ import coco1Img from '../../../assets/cocowater1.jpeg';
 //                 Eco-Friendly Processing
 //               </h2>
 //               <p className="text-secondary mb-6 text-base sm:text-lg leading-relaxed">
-//                 Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Joya FOods is committed to delivering products that are good for you and the planet.
+//                 Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Joya FOods is committed to delivering products that are good for you and our planet.
 //               </p>
 //             </motion.div>
 //           </div>

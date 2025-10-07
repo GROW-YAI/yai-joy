@@ -130,7 +130,7 @@ const K = {
       author: "Sarah Williams",
     },
     {
-      text: "Joya Foods' coconut range has become a staple in our household. The purity, taste, and nutritional value of their products are exceptional. It's refreshing to find a brand that prioritizes both health and flavor.",
+      text: "Joya Foods' coconut range has become a staple in our household. The purity, taste, and nutritional value of their products are exceptional. It is refreshing to find a brand that prioritizes both health and flavor.",
       author: "Michael Chen",
     },
     {

@@ -65,7 +65,7 @@ const Navbar = () => {
           className="flex items-center cursor-pointer"
           onClick={() => scrollToSection('home')}
         >
-          <img src={joyImg} alt="Logo" className="w-16 h-12 md:w-36 md:h-20" />
+          <img src={joyImg} alt="Joya Foods" className="w-16 h-12 md:w-36 md:h-20" />
         </motion.div>
 
         {/* Desktop Navigation */}

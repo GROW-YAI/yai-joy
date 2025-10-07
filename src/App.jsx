@@ -34,18 +34,14 @@ function App() {
         <PreLoader />
       ) : (
         <Router>
-          {/* Main content wrapper with top padding to account for fixed navbar */}
-          <div className="pt-24"> {/* Add this wrapper div */}
+          <div className="pt-24">
             <Routes>
-              {/* Define route for the landing page */}
               <Route path="/" element={<LandingPage />} />
 
-              {/* Catch-all route for 404 */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
 
-          {/* Scroll to Top Button */}
           <button
             onClick={scrollToTop}
             className="fixed z-50 bottom-10 right-10 p-3 bg-primary rounded-full shadow-lg text-white hover:bg-secondary"

@@ -70,7 +70,7 @@ const Contact = () => {
             Contact Our Team 
           </h2> 
           <p className="text-secondary text-sm sm:text-base text-center mb-6 sm:mb-8"> 
-            Have a question or inquiry? Our team is ready to assist you. Please complete the form below, and we'll respond promptly.
+            Have a question or inquiry? Our team is ready to assist you. Please complete the form below and we'll respond promptly.
           </p>
 
           {/* Status Messages */}

@@ -41,7 +41,7 @@ const LandingPage = () => {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
                 <div className="text-4xl mb-4">🏆</div>
                 <h3 className="text-xl font-bold text-accent mb-2">Premium Quality</h3>
-                <p className="text-accent/80">Carefully selected and processed</p>
+                <p className="text-accent/80">Carefully sourced, selected and processed</p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
                 <div className="text-4xl mb-4">♻️</div>

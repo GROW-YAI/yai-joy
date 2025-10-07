@@ -37,7 +37,7 @@ const About = () => {
               About Joya Foods Enterprise
             </h2>
             <p className="text-base sm:text-lg text-accent mb-6 leading-relaxed">
-              Joya Foods began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the well-being of our customers. We are passionate about bringing the natural goodness of coconuts to your table, with a commitment to quality and sustainability that ensures every product embodies the richness of nature.
+              Joya Foods began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the wellbeing of our customers. We are passionate about bringing the natural goodness of coconuts to your table, with a commitment to quality and sustainability that ensures every product embodies the richness of nature.
             </p>
           </div>
 

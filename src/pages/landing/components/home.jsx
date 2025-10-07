@@ -98,7 +98,7 @@ const Home = () => {
         </div>
 
         {/* Right Side - Content with CTAs */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-12 lg:p-16 bg-gradient-to-br from-white to-gray-50">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 md:p-12 lg:p-16 bg-gradient-to-br from-white to-gray-80">
           
           {/* Animated Badge */}
           <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6 animate-pulse">
