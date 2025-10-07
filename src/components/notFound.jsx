@@ -13,7 +13,7 @@ const NotFound = () => {
           transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
           className="w-full"
         >
-          {/* Responsive image container */}
+          {/* image container */}
           <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto mb-6 sm:mb-8">
             <img
               src={notFoundImg}
@@ -22,7 +22,7 @@ const NotFound = () => {
             />
           </div>
           
-          {/* Responsive typography */}
+          {/* typography */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4">
             Oops! Page Not Found
           </h1>
@@ -31,7 +31,7 @@ const NotFound = () => {
             It seems like the page you're looking for doesn't exist. Let's get you back on track!
           </p>
           
-          {/* Responsive button */}
+          {/* button */}
           <Link
             to="/"
             className="inline-block px-5 py-2.5 sm:px-6 sm:py-3 text-white bg-success hover:bg-success-dark rounded-lg font-medium text-sm sm:text-base shadow-md transition-all transform hover:scale-105 active:scale-95"

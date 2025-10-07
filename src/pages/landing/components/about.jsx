@@ -1,5 +1,7 @@
 import React from 'react';
 import { Leaf, Target, Lightbulb, Users } from 'lucide-react';
+import cocoImg from '../../../assets/cocotree.jpeg';
+import coco1Img from '../../../assets/cocowater1.jpeg';
 
 const About = () => {
   const coreValues = [
@@ -32,10 +34,10 @@ const About = () => {
           {/* Section Heading with Story */}
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6">
-              About Nagio Love Enterprise
+              About Joya Foods Enterprise
             </h2>
             <p className="text-base sm:text-lg text-accent mb-6 leading-relaxed">
-              Nagio Love began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the well-being of our customers. We are passionate about bringing the natural goodness of coconuts to your table, with a commitment to quality and sustainability that ensures every product embodies the richness of nature.
+              Joya Foods began with a simple idea: to harness the incredible versatility of coconuts. From our farms to your kitchen, we ensure that every step prioritizes quality, sustainability, and the wellbeing of our customers. We are passionate about bringing the natural goodness of coconuts to your table, with a commitment to quality and sustainability that ensures every product embodies the richness of nature.
             </p>
           </div>
 
@@ -85,6 +87,52 @@ const About = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Practices Section */}
+          <div className="mt-8 md:mt-12">
+            <h3 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-8 md:mb-12 text-center text-accent">
+              Our Practices
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+              {/* Sustainable Sourcing */}
+              <div className="flex flex-col md:flex-row items-center bg-neutral rounded-lg p-6 md:p-8">
+                <div className="flex-1 w-full mb-6 md:mb-0 md:mr-6 lg:mr-8">
+                   <img
+                                  src={cocoImg}
+                                  alt="Coconut Sourcing"
+                                  className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-lg border-4 border-success shadow-lg"
+                                />
+                </div>
+                <div className="flex-1 w-full text-center md:text-left">
+                  <h4 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">
+                    Sustainable Sourcing
+                  </h4>
+                  <p className="text-secondary text-base sm:text-lg leading-relaxed">
+                    At Joya Foods, we believe in sustainability from the ground up. Our coconuts are ethically sourced to preserve the environment and support local farmers, ensuring quality you can trust.
+                  </p>
+                </div>
+              </div>
+
+              {/* Eco-Friendly Processing */}
+              <div className="flex flex-col md:flex-row-reverse items-center bg-neutral rounded-lg p-6 md:p-8">
+                <div className="flex-1 w-full mb-6 md:mb-0 md:ml-6 lg:ml-8">
+                  <img
+                                 src={coco1Img}
+                                 alt="Coconut Processing"
+                                 className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-lg border-4 border-success shadow-lg"
+                               />
+                </div>
+                <div className="flex-1 w-full text-center md:text-left md:pr-6 lg:pr-8">
+                  <h4 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">
+                    Eco-Friendly Processing
+                  </h4>
+                  <p className="text-secondary text-base sm:text-lg leading-relaxed">
+                    Our eco-friendly processing methods retain the natural integrity of coconuts while minimizing waste. Joya Foods is committed to delivering products that are good for you and the planet.
+                  </p>
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ const Service2 = () => {
             Wholesome Coconut Flakes
           </h2>
           <p className="text-secondary text-base sm:text-lg md:text-xl text-center lg:text-left w-full">
-            Enjoy the goodness of Nagio Love's coconut flakes—crafted to perfection. Available in sweetened and unsweetened varieties, our flakes are free from preservatives, gluten-free, and vegan-friendly, ensuring a nutritious treat for everyone.
+            Enjoy the goodness of Joya Foods' coconut flakes—crafted to perfection. Available in sweetened and unsweetened varieties, our flakes are free from preservatives, gluten-free, and vegan-friendly, ensuring a truly nutritious treat for everyone.
           </p>
         </motion.div>
         

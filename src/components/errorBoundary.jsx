@@ -34,7 +34,7 @@ class ErrorBoundary extends React.Component {
             </h2>
             
             <p className="text-sm sm:text-base mb-6 sm:mb-8 leading-relaxed">
-              We're sorry, but an unexpected error has occurred. Please try refreshing the page or
+              We're sorry, but an unexpected error has occurred. Please try refreshing this page or
               contact our support team if the issue persists.
             </p>
             
