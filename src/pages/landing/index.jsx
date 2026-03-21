@@ -13,9 +13,9 @@ import Service4 from './components/service4';
 
 const LandingPage = () => {
   return (
-    <div className='m-0 min-h-screen'>
+    <div className='m-0 flex flex-col flex-1'>
       <Navbar />
-      <main className="w-full overflow-x-hidden">
+        <main className="w-full overflow-x-hidden flex-1">
         {/* Hero Section */}
         <section id="home" className="w-full">
           <Home />

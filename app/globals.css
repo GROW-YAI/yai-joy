@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Full height reset to eliminate whitespace below footer */
+*, ::-webkit-scrollbar { /* Ensure no scrollbar affects layout */
+  box-sizing: border-box;
+}
+
+*[class*="boafo"],
+[role="complementary"] {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
