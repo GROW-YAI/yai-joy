@@ -6,6 +6,7 @@ import PreLoader from "./components/preloader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/errorBoundary";
 import NotFound from "./components/notFound";
+import BoafoWidgetInitializer from "../app/components/BoafoWidgetInitializer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,16 +31,18 @@ function App() {
 
   return (
     <ErrorBoundary>
+      <BoafoWidgetInitializer />
       {isLoading ? (
         <PreLoader />
       ) : (
         <Router>
-          <div className="pt-24">
-            <Routes>
-              <Route path="/" element={<LandingPage />} />
-
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+          <div className="min-h-screen flex flex-col">
+            <div className="pt-24 flex-1">
+              <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
           </div>
 
           <button

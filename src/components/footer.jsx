@@ -9,7 +9,7 @@ const Footer = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="bg-primary text-white py-8 sm:py-12"
+      className="bg-primary text-white pt-8 sm:pt-12 pb-0 m-0"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
