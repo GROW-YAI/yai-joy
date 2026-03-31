@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 sm:mt-10 text-center border-t border-gray-700 pt-4 sm:pt-6">
+        <div className="mt-8 sm:mt-10 text-center border-t border-gray-700 pt-4 sm:pt-6 textt-left">
           <p className="text-gray-400 text-xs sm:text-sm">
             © 2024 Joya Foods. Crafting Coconut Excellence{" "}
             <span className="text-accent">♥</span> | Sustainable. Delicious.
